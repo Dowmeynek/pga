@@ -16,4 +16,8 @@ class Home extends BaseController
     {
         return view('logreg/reg/register');
     }
+    public function ab()
+    {
+        return view('home/about');
+    }
 }
