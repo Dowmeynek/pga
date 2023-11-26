@@ -19,8 +19,8 @@
                         </div>
                         <a href="" class="nav-item nav-link">Apps Design</a>
                         <a href="" class="nav-item nav-link">Marketing</a>
-                        <a href="" class="nav-item nav-link">Research</a>
-                        <a href="" class="nav-item nav-link">SEO</a>
+                        <a href="/savestud" class="nav-item nav-link">Add Students</a>
+                        <a href="/admins" class="nav-item nav-link">Admin</a>
                     </div>
                 </nav>
             </div>
