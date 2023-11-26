@@ -32,12 +32,12 @@
                                     
                                     <input type="hidden" name="id" value="<?= isset($student['id']) ? $student['id'] : '' ?>">
                                     
-                                    <div class="form-group" id="id_number">
+                                    <div class="form-group" id="idnum">
                                         <div class="col-xs-3">
                                             <label for="id_number">ID Number</label>
                                         </div>
                                         <div class="col-xs-9" id="id_number">
-                                           <input type="text" class="form-control" placeholder="Enter ID number" Name="id_Number" id="id_Number" value="<?= isset($student['id_number']) ? $student['id_number'] : '' ?>">  
+                                           <input type="text" class="form-control" placeholder="Enter ID number" Name="id_Number" id="id_Number" value="<?= isset($student['id_number']) ? $student['id_number'] : '' ?>"required>  
                                         </div>                    
                                     </div>
 
@@ -46,7 +46,7 @@
                                             <label for="first_name">First Name</label>
                                         </div>
                                         <div class="col-xs-9" id="fname">
-                                           <input type="text" class="form-control" placeholder="Enter first name" Name="first_name" id="first_name" value="<?= isset($student['first_name']) ? $student['first_name'] : '' ?>">  
+                                           <input type="text" class="form-control" placeholder="Enter first name" Name="first_name" id="first_name" value="<?= isset($student['first_name']) ? $student['first_name'] : '' ?>"required>  
                                         </div>                    
                                     </div>
 
@@ -55,7 +55,7 @@
                                             <label for="middle_name">Middle Name</label>
                                         </div>
                                         <div class="col-xs-9" id="midname">
-                                           <input type="text" class="form-control" placeholder="Enter middle name" name="middle_name" id="middle_name" value="<?= isset($student['middle_name']) ? $student['middle_name'] : '' ?>">  
+                                           <input type="text" class="form-control" placeholder="Enter middle name" name="middle_name" id="middle_name" value="<?= isset($student['middle_name']) ? $student['middle_name'] : '' ?>"required>  
                                         </div>                    
                                     </div>
 
@@ -64,7 +64,7 @@
                                             <label for="last_name">Last Name</label>
                                         </div>
                                         <div class="col-xs-9" id="lastname">
-                                            <input type="text" class="form-control" placeholder="Enter last name" name="last_name" id="last_name" value="<?= isset($student['last_name']) ? $student['last_name'] : '' ?>">
+                                            <input type="text" class="form-control" placeholder="Enter last name" name="last_name" id="last_name" value="<?= isset($student['last_name']) ? $student['last_name'] : '' ?>"required>
                                         </div>                    
                                     </div>
 
@@ -73,7 +73,7 @@
                                            <label for="address">Address</label>
                                         </div>
                                         <div class="col-xs-9" id="address1">
-                                           <input type="text" class="form-control" placeholder="Enter address" name="address" id="address" value="<?= isset($student['address']) ? $student['address'] : '' ?>"> 
+                                           <input type="text" class="form-control" placeholder="Enter address" name="address" id="address" value="<?= isset($student['address']) ? $student['address'] : '' ?>"required> 
                                         </div>                    
                                     </div>
                                     <div class="form-group" id="Email">
@@ -81,7 +81,7 @@
                                            <label for="email">Email</label>
                                         </div>
                                         <div class="col-xs-9" id="Email1">
-                                           <input type="email" class="form-control" placeholder="Enter email address" name="email" id="email" value="<?= isset($student['email']) ? $student['email'] : '' ?>"> 
+                                           <input type="email" class="form-control" placeholder="Enter email address" name="email" id="email" value="<?= isset($student['email']) ? $student['email'] : '' ?>"required> 
                                         </div>                    
                                     </div>
 
@@ -93,7 +93,7 @@
                                                     <label for="phone_number">Phone</label>
                                                 </div>
                                                 <div class="col-xs-7" id="phone_number1">
-                                                	<input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="09XXXXXXXXX" value="<?= isset($student['phone_number']) ? $student['phone_number'] : '' ?>">
+                                                	<input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="09XXXXXXXXX" value="<?= isset($student['phone_number']) ? $student['phone_number'] : '' ?>"required>
                                                 </div> 
                                         	</div>  
 
@@ -102,7 +102,7 @@
                                                     <label for="dob">Date of Birth</label>
                                                 </div>
                                                 <div class="col-xs-7" id="dob1">
-                                                	<input type="date" class="form-control" id="dob" name="dob" value="<?= isset($student['dob']) ? $student['dob'] : '' ?>" >
+                                                	<input type="date" class="form-control" id="dob" name="dob" value="<?= isset($student['dob']) ? $student['dob'] : '' ?>"required >
                                                 </div> 
                                         	</div>  
 
