@@ -49,7 +49,7 @@ class StudentController extends BaseController
         }
     }
 
-    return redirect()->to('/');
+    return view('index');
 }
 
 
