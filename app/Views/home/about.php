@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?= $this->include('cssJS/head') ?>
 </head>
 <body>
+<?= $this->include('home/navbar') ?>  
     <h1>This is about</h1>
+    <?= $this->include('cssJS/js') ?>
 </body>
 </html>
