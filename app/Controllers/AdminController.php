@@ -10,4 +10,9 @@ class AdminController extends BaseController
     {
         return view('admin');
     }
+    
+    public function cal()
+    {
+        return view('admin/content/cal');
+    }
 }

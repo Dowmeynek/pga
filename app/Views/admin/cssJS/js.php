@@ -32,3 +32,4 @@
 <script src="<?= base_url() ?>admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url() ?>admin/dist/js/pages/dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
