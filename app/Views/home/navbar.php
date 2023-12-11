@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <a href="" class="nav-item nav-link">Apps Design</a>
-                        <a href="" class="nav-item nav-link">Marketing</a>
+                        <a href="/graph" class="nav-item nav-link">Grades</a>
                         <a href="/savestud" class="nav-item nav-link">Add Students</a>
                         <a href="/admins" class="nav-item nav-link">Admin</a>
                     </div>

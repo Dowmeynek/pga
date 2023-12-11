@@ -20,4 +20,6 @@ class Home extends BaseController
     {
         return view('home/about');
     }
+
+
 }

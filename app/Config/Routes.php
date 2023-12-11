@@ -20,3 +20,6 @@ $routes->get('/teach/(:any)', 'TeacherController::teach/$1');
 $routes->post('/saveteacher', 'TeacherController::save');
 $routes->get('/deleteteacher/(:any)', 'TeacherController::delete/$1');
 $routes->get('/editteacher/(:any)', 'TeacherController::edit/$1');
+
+
+$routes->get('/graph', 'GradeController::index');
