@@ -6,23 +6,6 @@
                 <a href="" class="text-decoration-none navy">
                     <h1 class="m-2 white"><span class="secondary">PG</span>ACADEMY</h1>
                 </a>
-
-                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="navy">
-                    <div class="navbar-nav w-100">
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i class="fa fa-angle-down float-right mt-1"></i></a>
-                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
-                                <a href="" class="dropdown-item">HTML</a>
-                                <a href="" class="dropdown-item">CSS</a>
-                                <a href="" class="dropdown-item">jQuery</a>
-                            </div>
-                        </div>
-                        <a href="" class="nav-item nav-link">Apps Design</a>
-                        <a href="/graph" class="nav-item nav-link">Grades</a>
-                        <a href="/savestud" class="nav-item nav-link">Add Students</a>
-                        <a href="/admins" class="nav-item nav-link">Admin</a>
-                    </div>
-                </nav>
             </div>
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-0">
@@ -34,15 +17,15 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
-                            <a href="/home" class="nav-item nav-link active">Home</a>
+                            <a href="/home" class="nav-item nav-link">Home</a>
                             <a href="/about" class="nav-item nav-link">About</a>
                             <a href="" class="nav-item nav-link">Courses</a>
-                            <a href="" class="nav-item nav-link">Teachers</a>
+                            <a href="/graph" class="nav-item nav-link">Grades</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog List</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="/admins" class="dropdown-item">Admin</a>
+                                    <a href="/teacher" class="dropdown-item">Teacher</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>

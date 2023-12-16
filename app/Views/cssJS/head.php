@@ -23,4 +23,26 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?= base_url() ?>css/style.css" rel="stylesheet">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Add your styles here */
+        .active {
+            font-weight: bold; /* or any other style to indicate the active link */
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            // Get the current page URL
+            var currentLocation = window.location.pathname;
+
+            // Remove leading slash from the current page URL
+            currentLocation = currentLocation.substring(1);
+
+            // Find the corresponding nav link and add the "active" class
+            $('.navbar-nav a[href*="' + currentLocation + '"]').addClass('active');
+        });
+    </script>
 </head>

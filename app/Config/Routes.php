@@ -1,5 +1,6 @@
 <?php
 
+use CodeIgniter\Commands\Utilities\Routes;
 use CodeIgniter\Router\RouteCollection;
 
 /**
@@ -21,5 +22,6 @@ $routes->post('/saveteacher', 'TeacherController::save');
 $routes->get('/deleteteacher/(:any)', 'TeacherController::delete/$1');
 $routes->get('/editteacher/(:any)', 'TeacherController::edit/$1');
 
+$routes->get('/teacher', 'TeacherController::teacher');
 
 $routes->get('/graph', 'GradeController::index');

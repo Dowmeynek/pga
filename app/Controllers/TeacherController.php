@@ -36,13 +36,13 @@ class TeacherController extends BaseController
             $this->teacher->save($data);
         }
 
-        return redirect()->to('/addTeacher');
+        return view('teacher');
     }
 
     public function delete($id)
     {
         $this->teacher->delete($id);
-        return redirect()->to('/addTeacher');
+        return view('teacher');
     }
 
     public function edit($id)
@@ -59,8 +59,11 @@ class TeacherController extends BaseController
         return view('admin/content/teacher/addteacher', $data);
     }
 
-public function teach($teacher)
+    public function teach($teacher)
     {
         echo $teacher;
+    }
+    public function teacher(){
+        return view ('teacher');
     }
 }
