@@ -17,7 +17,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
-                            <a href="/home" class="nav-item nav-link">Home</a>
+                            <a href="/home" class="nav-item nav-link active">Home</a>
                             <a href="/about" class="nav-item nav-link">About</a>
                             <a href="" class="nav-item nav-link">Courses</a>
                             <a href="/graph" class="nav-item nav-link">Grades</a>
@@ -29,16 +29,10 @@
                                     <a href="/student" class="dropdown-item">Student</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="/logout" class="nav-item nav-link">Logout</a>
                         </div>
-                        
-                        <div class="text-center mt-4">
-                            <a class="btn btn-primary btn-lg mx-2" href="/login">Login</a>
-                       
-                            <a class="btn btn-primary btn-lg mx-2" href="/reg">Register</a>
-                        </div>
-
-                        
+                        <a class="btn btn-primary btn-lg mx-2 right" href="/">Login</a>
+                    <a class="btn btn-primary btn-lg mx-2 right" href="/reg">Register</a>
                     </div>
                 </nav>
             </div>

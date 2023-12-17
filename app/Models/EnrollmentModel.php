@@ -8,12 +8,12 @@ class EnrollmentModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'enrollment';
-    protected $primaryKey       = 'idnum';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['idnum','first_name','middle_name','last_name'];
+    protected $allowedFields    = ['first_name','middle_name','last_name','birthdate','age','address','phone','account_id'];
 
     // Dates
     protected $useTimestamps = false;

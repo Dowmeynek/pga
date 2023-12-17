@@ -7,6 +7,7 @@
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <h5 class="text-white text-uppercase mb-md-3">WELCOME <?= $currentuser ?>!</h5>
     <!-- Brand Logo -->
     <a href="/home" class="brand-link">
       <img src="<?= base_url() ?>img/pga.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -29,6 +30,10 @@
   
       <?= $this->include('admin/content/cal') ?>
       <?= $this->include('admin/content/navigation') ?>   
+      <hr class="white">  
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <a href="/logout" class="d-block">Logout</a>
+        </div>
   </aside>
   </div>
   </div>

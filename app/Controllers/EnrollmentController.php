@@ -16,31 +16,52 @@ class EnrollmentController extends BaseController
     }
     public function addenroll()
     {
-           $data['enrollment'] = $this->enrollment->findAll();
-
-    return view('enrollment', $data);
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('/');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'enrollment' => $this->enrollment->findAll(),
+            ];
+        return view('enrollment', $data);
+        }
     }
     public function enroll($enrollment)
     {
         echo $enrollment;
     }
     public function save()  {
-        $idnum = $_POST['idnum'];
-        $data = [
-            'idnum' => $this->request->getVar('idnum'),
+        $idnum = $_POST['id'];
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('/');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'id' => $this->request->getVar('id'),
             'first_name' => $this->request->getVar('first_name'),
             'middle_name' => $this->request->getVar('middle_name'),
             'last_name' => $this->request->getVar('last_name'),
-        
+            'age' => $this->request->getVar('age'),
+            'birthdate' => $this->request->getVar('birthdate'),
+            'address' => $this->request->getVar('address'),
+            'phone' => $this->request->getVar('phone'),
+            'account_id' => $_SESSION['id'],
         ];
 
         if ($idnum != null) {
-            $this->enrollment->set($data)->where('idnum', $idnum)->update();
+            $this->enrollment->set($data)->where('id', $id)->update();
         } else {
             $this->enrollment->save($data);
         }
 
-        return view('enrollment');
+        return view('enrollment', $data);
+    }
     }
 
 }

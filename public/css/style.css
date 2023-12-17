@@ -10000,3 +10000,7 @@ h6,
 select#role {
   width: 100%;
 }
+
+.right{
+  align-items: right !important;
+}
