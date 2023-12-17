@@ -8,11 +8,11 @@
   
     <!-- Include Chart.js library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <?= $this->include('cssJS/head') ?>
+    <?= $this->include('admin/cssJS/head') ?>
 </head>
 <body>
-<?= $this->include('home/topbar') ?> 
-<?= $this->include('home/navbar') ?>
+<?= $this->include('student/body') ?>
+<?= $this->include('student/content/style/pushandfull') ?>
     <div style="width: 50%; margin: auto;">
         <canvas id="myChart"></canvas>
     </div>
@@ -48,6 +48,6 @@
             }
         });
     </script>
-<?= $this->include('cssJS/js') ?>
+<?= $this->include('admin/cssJS/js') ?>
 </body>
 </html>

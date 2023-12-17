@@ -10,7 +10,7 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Sign in</h2>
-                        <form method="get" class="register-form" id="login-form" action="/home">
+                        <form method="get" class="register-form" id="login-form" action="/login">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>

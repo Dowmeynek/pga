@@ -26,11 +26,19 @@
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="/admins" class="dropdown-item">Admin</a>
                                     <a href="/teacher" class="dropdown-item">Teacher</a>
+                                    <a href="/student" class="dropdown-item">Student</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                        
+                        <div class="text-center mt-4">
+                            <a class="btn btn-primary btn-lg mx-2" href="/login">Login</a>
+                       
+                            <a class="btn btn-primary btn-lg mx-2" href="/reg">Register</a>
+                        </div>
+
+                        
                     </div>
                 </nav>
             </div>

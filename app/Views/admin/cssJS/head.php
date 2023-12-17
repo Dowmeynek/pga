@@ -25,4 +25,7 @@
   <link rel="stylesheet" href="<?= base_url() ?>admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?= base_url() ?>admin/plugins/summernote/summernote-bs4.min.css">
+
+
+
 </head>

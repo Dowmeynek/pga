@@ -5,9 +5,9 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
 
-            <?= $this->include('admin/content/navContent/widget') ?>
-            <?= $this->include('admin/content/navContent/layout') ?>
-            <?= $this->include('admin/content/navContent/teachers') ?> 
+            <?= $this->include('teacher/content/navContent/widget') ?>
+            <?= $this->include('teacher/content/navContent/layout') ?>
+            <?= $this->include('teacher/content/navContent/teachers') ?> 
     </nav>
 
 </body>

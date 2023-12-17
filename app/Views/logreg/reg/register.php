@@ -6,7 +6,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="get" class="register-form" id="register-form" action="/">
+                        <form method="get" class="register-form" id="register-form" action="/reg">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="signup-image">
                         <figure><img src="img/pga.ico" alt="sing up image"></figure>
-                        <a href="/" class="signup-image-link">I am already member</a>
+                        <a href="/login" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
