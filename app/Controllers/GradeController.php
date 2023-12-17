@@ -9,17 +9,34 @@ class GradeController extends BaseController
 {
     public function index()
     {
-        $data = [
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('/');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+                'currentuser' => $_SESSION['username'],
             'chartData' => $this->getChartData(),
         ];
 
         return view('student/content/graph', $data);
     }
+    }
     private function getChartData()
     {
         $chartModel = new GradeModel(); // Replace with your actual model name
-        $data = $chartModel->findAll();
-
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('/');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+                'currentuser' => $_SESSION['username'],
+                'graph' => $chartModel->findAll(),
+            ];
         return $data;
+        }
     }
 }
