@@ -48,9 +48,12 @@ class EnrollmentController extends BaseController
             'middle_name' => $this->request->getVar('middle_name'),
             'last_name' => $this->request->getVar('last_name'),
             'age' => $this->request->getVar('age'),
+            'gender' => $this->request->getVar('gender'),
             'birthdate' => $this->request->getVar('birthdate'),
             'address' => $this->request->getVar('address'),
             'phone' => $this->request->getVar('phone'),
+            'nationality' => $this->request->getVar('nationality'),
+            'religion' => $this->request->getVar('religion'),
             'account_id' => $_SESSION['id'],
         ];
 

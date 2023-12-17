@@ -47,6 +47,12 @@
                                 </div> 
 
                                 <div class="form-group">
+                                    <label for="last_name">Gender:</label>
+                                        <input type="text" class="form-control" name="gender" placeholder="Enter Gender" 
+                                        value="<?php if (isset($enrollment['gender'])) {echo $enrollment['gender'];}?>">
+                                </div> 
+
+                                <div class="form-group">
                                     <label for="last_name">Birthdate:</label>
                                         <input type="date" class="form-control" name="birthdate" placeholder="Enter Birthdate" 
                                         value="<?php if (isset($enrollment['age'])) {echo $enrollment['age'];}?>">
@@ -62,6 +68,18 @@
                                     <label for="last_name">Phone Number:</label>
                                         <input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" 
                                         value="<?php if (isset($enrollment['phone'])) {echo $enrollment['phone'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="last_name">Nationality:</label>
+                                        <input type="text" class="form-control" name="nationality" placeholder="Enter Nationality" 
+                                        value="<?php if (isset($enrollment['nationality'])) {echo $enrollment['nationality'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="last_name">Religion:</label>
+                                        <input type="text" class="form-control" name="religion" placeholder="Enter Religion" 
+                                        value="<?php if (isset($enrollment['religion'])) {echo $enrollment['religion'];}?>">
                                 </div> 
 
                             <button type="submit" class="btn btn-primary">Save</button>
