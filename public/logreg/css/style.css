@@ -250,10 +250,12 @@ body {
   -ms-transform: translate(-50%, -50%); }
 
 .signup {
-  margin-bottom: 150px; }
+  margin-bottom: 20px; }
 
 .signup-content {
-  padding: 75px 0; }
+  padding: 75px 0; 
+  background-color: #c6f5fa;
+}
 
 .signup-form, .signup-image, .signin-form, .signin-image {
   width: 50%;
@@ -452,7 +454,9 @@ label.valid {
 
 .signin-content {
   padding-top: 67px;
-  padding-bottom: 87px; }
+  padding-bottom: 87px; 
+  background-color: #c6f5fa;
+}
 
 .social-login {
   align-items: center;
