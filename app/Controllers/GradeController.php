@@ -13,7 +13,7 @@ class GradeController extends BaseController
             'chartData' => $this->getChartData(),
         ];
 
-        return view('home/graph', $data);
+        return view('student/content/graph', $data);
     }
     private function getChartData()
     {

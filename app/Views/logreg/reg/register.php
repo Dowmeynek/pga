@@ -1,27 +1,27 @@
 <?= $this->include('logreg/cssJS/head') ?>
 <body>
         <!-- Sign up form -->
+        <section class="signup">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <section class="signup">
-                        <form method='post' class="register-form" id="register-form" action="/Registering">
+                        <form method="get" class="register-form" id="register-form" action="/reg">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" placeholder="Enter Username" name="username" value="<?= set_value('username') ?>" required/>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" placeholder="Enter Email" name="email" value="<?= set_value('email') ?>" required/>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" placeholder="Enter Password" name="password" value="<?= set_value('password') ?>" required/>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
                             </div>
                             <div class="form-group">
                                 <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" placeholder="Confirm Password" name="confirmpassword" value="<?= set_value('confirmpassword') ?>" required/>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -33,18 +33,8 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                    <?php if(isset($validation)):?>
-                    <div class="alert alert-warning">
-                    <?= $validation->listErrors()?>
-                    </div>
-                    <?php endif;?>
-                    <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-success">
-                    <?= session()->getFlashdata('msg')?>
-                    </div>
-                    <?php endif;?>
-                        <figure><img src="<?= base_url() ?>img/pga.ico" alt="sing up image"></figure>
-                        <a href="/" class="signup-image-link">I am already member</a>
+                        <figure><img src="img/pga.ico" alt="sing up image"></figure>
+                        <a href="/login" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
