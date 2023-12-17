@@ -9996,3 +9996,7 @@ h6,
 .icon{
   background-color: white;
 }
+
+select#role {
+  width: 100%;
+}

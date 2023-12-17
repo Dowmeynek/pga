@@ -8,17 +8,17 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/pg.jpg" style="min-height: 300px; object-fit: cover;">
+                    <img class="position-relative w-100" src="<?= base_url() ?>img/pg.jpg" style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-left justify-content-left">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-md-3">WELCOME STUDENTS!</h5>
+                            <h5 class="text-white text-uppercase mb-md-3">WELCOME <?= $currentuser ?>!</h5>
                             <h1 class="display-3 text-white mb-md-4">PUERTO GALERA ACADEMY</h1>
         
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
-                    <img class="position-relative w-100" src="img/front.jpg" style="min-height: 300px; object-fit: cover;">
+                    <img class="position-relative w-100" src="<?= base_url() ?>img/front.jpg" style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-bottom justify-content-bottom">
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                         </div>
@@ -35,7 +35,7 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="<?= base_url() ?>img/about.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
                     <div class="text-left mb-4">
@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-1.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Web Design</h4>
                             <span>100 Courses</span>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-2.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Development</h4>
                             <span>100 Courses</span>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-3.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Game Design</h4>
                             <span>100 Courses</span>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-4.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-4.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Apps Design</h4>
                             <span>100 Courses</span>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-5.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Marketing</h4>
                             <span>100 Courses</span>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-6.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-6.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Research</h4>
                             <span>100 Courses</span>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-7.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-7.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">Content Writing</h4>
                             <span>100 Courses</span>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/cat-8.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/cat-8.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
                             <h4 class="text-white font-weight-medium">SEO</h4>
                             <span>100 Courses</span>
@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-1.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-1.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-2.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-2.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -183,7 +183,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-3.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-3.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-4.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-4.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -219,7 +219,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-5.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-5.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="rounded overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/course-6.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/course-6.jpg" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
@@ -322,7 +322,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="<?= base_url() ?>img/team-1.jpg" alt="">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -338,7 +338,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="<?= base_url() ?>img/team-2.jpg" alt="">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -354,7 +354,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="<?= base_url() ?>img/team-3.jpg" alt="">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -370,7 +370,7 @@
                 <div class="col-md-6 col-lg-3 text-center team mb-4">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="<?= base_url() ?>img/team-4.jpg" alt="">
                             <div class="team-social">
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-light btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -402,21 +402,21 @@
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="<?= base_url() ?>img/testimonial-1.jpg" alt="">
                             <h5 class="m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="<?= base_url() ?>img/testimonial-2.jpg" alt="">
                             <h5 class="m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
                             <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
+                            <img class="img-fluid mx-auto mb-3" src="<?= base_url() ?>img/testimonial-3.jpg" alt="">
                             <h5 class="m-0">Client Name</h5>
                             <span>Profession</span>
                         </div>
@@ -438,7 +438,7 @@
             <div class="row pb-3">
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/blog-1.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -447,7 +447,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/blog-2.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>
@@ -456,7 +456,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                        <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                        <img class="img-fluid" src="<?= base_url() ?>img/blog-3.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
                             <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
                             <p class="text-primary m-0">Jan 01, 2050</p>

@@ -9,5 +9,5 @@
    
     <link href="<?= base_url() ?>img/pga.ico" rel="icon">
     <!-- Main css -->
-    <link rel="stylesheet" href="logreg/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>logreg/css/style.css">
 </head>

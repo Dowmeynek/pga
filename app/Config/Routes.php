@@ -25,3 +25,7 @@ $routes->get('/editteacher/(:any)', 'TeacherController::edit/$1');
 $routes->get('/teacher', 'TeacherController::teacher');
 
 $routes->get('/graph', 'GradeController::index');
+
+$routes->post('/Registering', 'StudentController::register');
+$routes->get('/logout', 'Home::Logout');
+$routes->post('/LoginAuth', 'Home::LoginAuth');

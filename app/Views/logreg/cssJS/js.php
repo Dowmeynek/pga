@@ -1,4 +1,4 @@
 <body>
-<script src="logreg/vendor/jquery/jquery.min.js"></script>
-<script src="logreg/js/main.js"></script>
+<script src="<?= base_url() ?>logreg/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>logreg/js/main.js"></script>
 </body>

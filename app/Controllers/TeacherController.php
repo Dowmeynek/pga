@@ -36,25 +36,32 @@ class TeacherController extends BaseController
             $this->teacher->save($data);
         }
 
-        return view('teacher');
+        $data = [
+            'teacher' => $this->teacher->findAll(),
+            '$teach' => $this->teacher->where('id', $id)->first(),
+        ];
+
+        return view('admin/content/teacher/addteacher', $data);
     }
 
     public function delete($id)
     {
         $this->teacher->delete($id);
-        return view('teacher');
+
+        $data = [
+            'teacher' => $this->teacher->findAll(),
+            '$teach' => $this->teacher->where('id', $id)->first(),
+        ];
+
+        return view('admin/content/teacher/addteacher', $data);
     }
 
     public function edit($id)
     {
         $data = [
             'teacher' => $this->teacher->findAll(),
-            '$teach' => $this->teacher->where('id', $id)->first(),
+            'teach' => $this->teacher->where('id', $id)->first(),
         ];
-
-        if (!$data['$teach']) {
-            echo 'ERROR';
-        }
 
         return view('admin/content/teacher/addteacher', $data);
     }
@@ -64,6 +71,16 @@ class TeacherController extends BaseController
         echo $teacher;
     }
     public function teacher(){
-        return view ('teacher');
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('/');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+                'currentuser' => $_SESSION['username'],
+            ];
+            return view ('teacher', $data);
+        }
     }
 }

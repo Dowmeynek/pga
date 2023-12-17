@@ -19,48 +19,36 @@
 
                                <div class="form-group">
                                     <label for="idnum">ID number:</label>
-                                    <input type="hidden" name="id" value="<?= isset($teacher['id']) ? $teacher['id'] : '' ?>">
+                                    <input type="hidden" name="id" value="<?php if (isset($teach['id'])) {echo $teach['id'];}?>">
                                         <input type="text" class="form-control" name="idnum" placeholder="Enter ID number"
-                                        value="<?= isset($teacher['idnum']) ? $teacher['idnum'] : '' ?>">
+                                        value="<?= isset($teach['idnum']) ? $teach['idnum'] : '' ?>">
                                 </div> 
 
                                 <div class="form-group">
                                     <label for="fname">First Name:</label>
                                         <input type="text" class="form-control" name="fname" placeholder="Enter First Name"
-                                        value="<?= isset($teacher['fname']) ? $teacher['fname'] : '' ?>">
+                                        value="<?php if (isset($teach['fname'])) {echo $teach['fname'];}?>">
                                 </div> 
 
                                 <div class="form-group">
                                     <label for="mname">Middle Name:</label>
                                         <input type="text" class="form-control" name="mname" placeholder="Enter Middle Name" 
-                                        value="<?= isset($teacher['mname']) ? $teacher['mname'] : '' ?>">
+                                        value="<?php if (isset($teach['mname'])) {echo $teach['mname'];}?>">
                                 </div> 
 
                                 <div class="form-group">
                                     <label for="lname">Last Name:</label>
                                         <input type="text" class="form-control" name="lname" placeholder="Enter Last Name" 
-                                        value="<?= isset($teacher['lname']) ? $teacher['lname'] : '' ?>">
+                                        value="<?php if (isset($teach['lname'])) {echo $teach['lname'];}?>">
                                 </div> 
 
                                 <div class="form-group">
                                     <label for="dob">Date of Birth:</label>
                                         <input type="date" class="form-control" name="dob" placeholder="Enter Date of Birth" 
-                                        value="<?= isset($teacher['dob']) ? $teacher['dob'] : '' ?>">
+                                        value="<?php if (isset($teach['dob'])) {echo $teach['dob'];}?>">
                                 </div>
-                                
-                                
-
-
-
-
-
-
-
-
-
-
                             <button type="submit" class="btn btn-primary">Save</button>
-                            </form>  
+                            </form><br>  
                 <div class="container" style="width: 900px;">
                     <div class="card">
                         <div class="card-header">

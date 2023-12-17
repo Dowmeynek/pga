@@ -29,8 +29,9 @@
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="/logout" class="nav-item nav-link">Logout</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="/reg">Join Now</a>
                     </div>
                 </nav>
             </div>
