@@ -16,7 +16,6 @@
     <div style="width: 50%; margin: auto;">
         <canvas id="myChart"></canvas>
     </div>
-
     <script>
         // Get chart data from PHP
         var chartData = <?php echo json_encode($chartData); ?>;

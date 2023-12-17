@@ -26,17 +26,8 @@ class GradeController extends BaseController
     private function getChartData()
     {
         $chartModel = new GradeModel(); // Replace with your actual model name
-        if(!session()->get('isLoggedIn')){
-            return redirect()->to('/');
-        }
-        else{
-            $session = session();
-            session_start();
-            $data = [
-                'currentuser' => $_SESSION['username'],
-                'graph' => $chartModel->findAll(),
-            ];
+        $data = $chartModel->findAll();
+
         return $data;
-        }
     }
 }
