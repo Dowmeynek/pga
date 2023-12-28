@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\EnrollmentModel;
 use App\Models\StudentParents;
+use App\Models\SchoolAttended;
 
 
 class EnrollmentController extends BaseController
@@ -14,6 +15,7 @@ class EnrollmentController extends BaseController
     {
         $this->enrollment = new EnrollmentModel();
         $this->parent = new StudentParents();
+        $this->schools = new SchoolAttended();
   
     }
     public function addenroll()
@@ -105,6 +107,43 @@ class EnrollmentController extends BaseController
             $this->parent->set($data)->where('id', $id)->update();
         } else {
             $this->parent->save($data);
+        }
+
+        return view('enrollment', $data);
+    }
+    }
+
+    
+    public function saveschool()  {
+        $idnum = $_POST['id'];
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('login');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'id' => $this->request->getVar('id'),
+            'pre_school' => $this->request->getVar('pre_school'), 
+            'pre_sch_level' => $this->request->getVar('pre_sch_level'),
+            'pre_sch_period' => $this->request->getVar('pre_sch_period'), 
+            'grade_sch_g1_g3' => $this->request->getVar('grade_sch_g1_g3'), 
+            'grade_g1_g3_level' => $this->request->getVar('grade_g1_g3_level'),
+            'grade_g1_g3_period' => $this->request->getVar('grade_g1_g3_period'), 
+            'grade_sch_g4_g6' => $this->request->getVar('grade_sch_g4_g6'), 
+            'grade_g4_g6_level' => $this->request->getVar('grade_g4_g6_level'), 
+            'grade_g4_g6_period' => $this->request->getVar('grade_g4_g6_period'), 
+            'junior_sch_g7_g10' => $this->request->getVar('junior_sch_g7_g10'), 
+            'junior_g7_g10_level' => $this->request->getVar('junior_g7_g10_level'),
+            'junior_g7_g10_period' => $this->request->getVar('junior_g7_g10_period'),
+            'account_id' => $_SESSION['id'],
+        ];
+
+        if ($idnum != null) {
+            $this->schools->set($data)->where('id', $id)->update();
+        } else {
+            $this->schools->save($data);
         }
 
         return view('enrollment', $data);

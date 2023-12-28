@@ -11,9 +11,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/addTeacher" class="nav-link">
+                <a href="/enroll" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>Enrollment</p>
                 </a>
               </li>
               <li class="nav-item">

@@ -214,6 +214,93 @@
                     <!-- /.card -->
                 </div> <!-- /.dito -->
 
+                <div class="col-10 mt-5" >
+                     <form action="/saveschool" method="post">
+
+                               <div class="form-group">
+                                        <input type="hidden" class="form-control" name="id"
+                                        value="<?php if (isset($enrollment['id'])) {echo $enrollment['id'];}?>">
+                                </div> 
+                                <h2>SCHOOLS ATTENDED</h2>
+                                <div class="form-group">
+                                    <label for="pre_school">Pre-School(Kinder):</label>
+                                        <input type="text" class="form-control" name="pre_school" placeholder="Enter Pre-School(Kinder):"
+                                        value="<?php if (isset($enrollment['pre_school'])) {echo $enrollment['pre_school'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="pre_sch_level">Pre-School(Kinder) Level:</label>
+                                        <input type="text" class="form-control" name="pre_sch_level" placeholder="Pre-School(Kinder) Level:" 
+                                        value="<?php if (isset($enrollment['pre_sch_level'])) {echo $enrollment['pre_sch_level'];}?>">
+                                </div> 
+                               
+                                <div class="form-group">
+                                    <label for="pre_sch_period">Pre-School(Kinder) Period Covered:</label>
+                                        <input type="text" class="form-control" name="pre_sch_period" placeholder="Enter Pre-School(Kinder) Period" 
+                                        value="<?php if (isset($enrollment['pre_sch_period'])) {echo $enrollment['pre_sch_period'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="grade_sch_g1_g3">Grade School(G1-G3):</label>
+                                        <input type="text" class="form-control" name="grade_sch_g1_g3" placeholder="Enter Grade School(G1-G3)" 
+                                        value="<?php if (isset($enrollment['grade_sch_g1_g3'])) {echo $enrollment['grade_sch_g1_g3'];}?>">
+                                </div> 
+                                
+                                <div class="form-group">
+                                    <label for="grade_g1_g3_level">Grade School(G1-G3) Level:</label>
+                                        <input type="text" class="form-control" name="grade_g1_g3_level" placeholder="Enter Grade School(G1-G3) Level:"
+                                        value="<?php if (isset($enrollment['grade_g1_g3_level'])) {echo $enrollment['grade_g1_g3_level'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="grade_g1_g3_period">Grade School(G1-G3) Period Covered:</label>
+                                        <input type="text" class="form-control" name="grade_g1_g3_period" placeholder="Grade School(G1-G3) Period:" 
+                                        value="<?php if (isset($enrollment['grade_g1_g3_period'])) {echo $enrollment['grade_g1_g3_period'];}?>">
+                                </div> 
+                               
+                                <div class="form-group">
+                                    <label for="grade_sch_g4_g6">Grade School(G4-G6):</label>
+                                        <input type="text" class="form-control" name="grade_sch_g4_g6" placeholder="Enter Grade School(G4-G6)" 
+                                        value="<?php if (isset($enrollment['grade_sch_g4_g6'])) {echo $enrollment['grade_sch_g4_g6'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="grade_g4_g6_level">Grade School(G4-G6) Level:</label>
+                                        <input type="text" class="form-control" name="grade_g4_g6_level" placeholder="Enter Grade School(G4-G6) Level" 
+                                        value="<?php if (isset($enrollment['grade_g4_g6_level'])) {echo $enrollment['grade_g4_g6_level'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="grade_g4_g6_period">Grade School(G4-G6) Period Covered:</label>
+                                        <input type="text" class="form-control" name="grade_g4_g6_period" placeholder="Enter Grade School(G4-G6) Period" 
+                                        value="<?php if (isset($enrollment['grade_g4_g6_period'])) {echo $enrollment['grade_g4_g6_period'];}?>">
+                                </div> 
+                            
+                                <div class="form-group">
+                                    <label for="junior_sch_g7_g10">Junior High School(G7-G10):</label>
+                                        <input type="text" class="form-control" name="junior_sch_g7_g10" placeholder="Enter Junior High School(G4-G6)" 
+                                        value="<?php if (isset($enrollment['junior_sch_g7_g10'])) {echo $enrollment['junior_sch_g7_g10'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="junior_g7_g10_level">Junior High School(G7-G10) Level:</label>
+                                        <input type="text" class="form-control" name="junior_g7_g10_level" placeholder="Enter Junior High School(G7-G10) Level" 
+                                        value="<?php if (isset($enrollment['junior_g7_g10_level'])) {echo $enrollment['junior_g7_g10_level'];}?>">
+                                </div> 
+
+                                <div class="form-group">
+                                    <label for="junior_g7_g10_period">Junior High School(G7-G10) Period Covered:</label>
+                                        <input type="text" class="form-control" name="junior_g7_g10_period" placeholder="Enter Junior High School(G7-G10) Period" 
+                                        value="<?php if (isset($enrollment['junior_g7_g10_period'])) {echo $enrollment['junior_g7_g10_period'];}?>">
+                                </div> 
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            </form>  
+            
+                    <!-- /.card -->
+                </div> <!-- /.dito -->
+
+
             </div>
         </div>
     </div>
