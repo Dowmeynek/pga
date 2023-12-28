@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EnrollmentModel extends Model
+class StudentParents extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'enrollment';
+    protected $table            = 'student_parents';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['first_name','middle_name','last_name','nickname','birthdate','birthplace','age',
-    'gender','address','tel_num','mobile_num','postal_code','nationality','religion','status','account_id'];
+    protected $allowedFields    = ['mother_fullname', 'mom_res_add','mom_off_add', 'mom_mob_num','mom_off_num', 'mother_email', 'mother_occupation',
+    'father_fullname', 'dad_res_add','dad_off_add', 'dad_mob_num','dad_off_num','father_email', 'father_occupation', 'account_id'];
 
     // Dates
     protected $useTimestamps = false;

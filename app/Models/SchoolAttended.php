@@ -4,17 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EnrollmentModel extends Model
+class SchoolAttended extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'enrollment';
+    protected $table            = 'schoolattendeds';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['first_name','middle_name','last_name','nickname','birthdate','birthplace','age',
-    'gender','address','tel_num','mobile_num','postal_code','nationality','religion','status','account_id'];
+    protected $allowedFields    = [];
 
     // Dates
     protected $useTimestamps = false;

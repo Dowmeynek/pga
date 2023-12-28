@@ -9,7 +9,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <h5 class="text-white text-uppercase mb-md-3">WELCOME <?= $currentuser ?>!</h5>
     <!-- Brand Logo -->
-    <a href="/home" class="brand-link">
+    <a href="/" class="brand-link">
       <img src="<?= base_url() ?>img/pga.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">PGA</span>
     </a>

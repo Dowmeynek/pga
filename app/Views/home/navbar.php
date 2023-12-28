@@ -29,10 +29,10 @@
                                     <a href="/student" class="dropdown-item">Student</a>
                                 </div>
                             </div>
-                            <a href="/logout" class="nav-item nav-link">Logout</a>
+                            <br>
                         </div>
-                        <a class="btn btn-primary btn-lg mx-2 right" href="/">Login</a>
-                    <a class="btn btn-primary btn-lg mx-2 right" href="/reg">Register</a>
+                        <a class="btn btn-primary btn-lg mx-2" href="/login">Login</a>
+                            <a class="btn btn-primary btn-lg mx-2" href="/reg">Register</a>
                     </div>
                 </nav>
             </div>

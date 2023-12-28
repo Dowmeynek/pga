@@ -6,8 +6,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::logreg');
-$routes-> get ('/home', 'Home::index');
+$routes->get('/login', 'Home::logreg');
+$routes-> get ('/', 'Home::index');
 $routes->get('/reg', 'Home::reg');
 $routes->get('/about', 'Home::ab');
 
@@ -29,6 +29,7 @@ $routes->get('/student', 'StudentController::index');
 $routes->get('/addenroll', 'EnrollmentController::addenroll');
 $routes->get('/enroll/(:any)', 'EnrollmentController::enroll/$1');
 $routes->post('/save', 'EnrollmentController::save');
+$routes->post('/saveparent', 'EnrollmentController::saveparent');
 
 $routes->post('/Registering', 'StudentController::register');
 $routes->get('/logout', 'Home::Logout');

@@ -6,17 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        if(!session()->get('isLoggedIn')){
-            return redirect()->to('/');
-        }
-        else{
-            $session = session();
-            session_start();
-            $data = [
-                'currentuser' => $_SESSION['username'],
-            ];
-            return view('index', $data);
-        }
+        return view('index');
     }
     public function logreg()
     {
@@ -37,7 +27,7 @@ class Home extends BaseController
     public function Logout() {
         $session = session();
         session_destroy();
-        return redirect()->to('/');
+        return redirect()->to('login');
     }
 
     public function LoginAuth() {
@@ -73,13 +63,13 @@ class Home extends BaseController
                 }
                 else{
                 $session->setFlashdata('msg','Password is incorrect.');
-                return redirect()->to('/');
+                return redirect()->to('login');
                 }
             }
             else
             {
                 $session->setFlashdata('msg','Email does not exist.');
-                return redirect()->to('/');
+                return redirect()->to('login');
             };
     }
 

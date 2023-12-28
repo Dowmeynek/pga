@@ -10,7 +10,7 @@ class GradeController extends BaseController
     public function index()
     {
         if(!session()->get('isLoggedIn')){
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else{
             $session = session();

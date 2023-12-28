@@ -11,7 +11,7 @@ class AdminController extends BaseController
     {
         if(!session()->get('isLoggedIn'))
         {
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else
         {
@@ -40,7 +40,7 @@ class AdminController extends BaseController
     {
         if(!session()->get('isLoggedIn'))
         {
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else
         {
@@ -71,7 +71,7 @@ class AdminController extends BaseController
         }
         if(!session()->get('isLoggedIn'))
         {
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else
             {
@@ -92,7 +92,7 @@ class AdminController extends BaseController
         $this->teacher->delete($id);
         if(!session()->get('isLoggedIn'))
         {
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else
             {
@@ -112,7 +112,7 @@ class AdminController extends BaseController
     {
         if(!session()->get('isLoggedIn'))
         {
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else
         {

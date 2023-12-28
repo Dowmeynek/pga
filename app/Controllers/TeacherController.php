@@ -8,7 +8,7 @@ class TeacherController extends BaseController
 {
     public function teacher(){
         if(!session()->get('isLoggedIn')){
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else{
             $session = session();

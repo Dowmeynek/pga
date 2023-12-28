@@ -9,7 +9,7 @@ class StudentController extends BaseController
     public function index()
     {
         if(!session()->get('isLoggedIn')){
-            return redirect()->to('/');
+            return redirect()->to('login');
         }
         else{
             $session = session();
@@ -41,7 +41,7 @@ class StudentController extends BaseController
 
             $account->save($data);
 
-            return redirect()->to('/');
+            return redirect()->to('login');
         }else{
             $data['validation'] = $this->validator;
             return redirect()->to('/reg');

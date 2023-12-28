@@ -10004,3 +10004,9 @@ select#role {
 .right{
   align-items: right !important;
 }
+
+a.btn.btn-primary.btn-lg.mx-2 {
+  width: 25%;
+  height: 25%;
+  margin: 5px;
+}
