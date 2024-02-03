@@ -38,3 +38,6 @@ $routes->post('/saveschool', 'EnrollmentController::saveschool');
 $routes->post('/Registering', 'StudentController::register');
 $routes->get('/logout', 'Home::Logout');
 $routes->post('/LoginAuth', 'Home::LoginAuth');
+
+
+$routes->get('/li', 'LibraryController::index');

@@ -43,7 +43,7 @@
                         <h1>Puerto Galera Academy</h1>
                     </div>
                     <p>Puerto Galera Academy is a private Catholic school located at Poblacion, Puerto Galera, Oriental Mindoro</p>
-                    <a href="/about" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                    <a href="/li" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
                 </div>
             </div>
         </div>
