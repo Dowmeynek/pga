@@ -44,7 +44,7 @@
                     </div>
                     <?php endif;?>
                         <figure><img src="<?= base_url() ?>img/pga.ico" alt="sing up image"></figure>
-                        <a href="/" class="signup-image-link">I am already member</a>
+                        <a href="/login" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
