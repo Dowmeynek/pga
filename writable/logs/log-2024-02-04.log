@@ -1,0 +1,7 @@
+CRITICAL - 2024-02-04 12:20:16 --> Class "App\Models\LibraryModel" not found
+in APPPATH\Controllers\LibraryController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\LibraryController->saveData()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibraryController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')
