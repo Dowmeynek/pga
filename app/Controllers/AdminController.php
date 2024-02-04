@@ -22,16 +22,11 @@ class AdminController extends BaseController
             session_start();
             $data = [
                 'currentuser' => $_SESSION['username'],
+                'teacher' => $this->teacher->findAll(),
                 ];
-            return view ('admin', $data);
+            return view ('admin/index', $data);
             }
     }
-    
-    public function cal()
-    {
-        return view('admin/content/cal');
-    }
-
     
     private $teacher;
     public function __construct()
@@ -56,7 +51,7 @@ class AdminController extends BaseController
                 'currentuser' => $_SESSION['username'],
                 'teacher' => $this->teacher->findAll(),
                 ];
-                return view('admin/content/teacher/addteacher', $data);
+                return view('admin/index', $data);
             }
     }
     public function save()  {
@@ -88,8 +83,9 @@ class AdminController extends BaseController
                     'teacher' => $this->teacher->findAll(),
                     '$teach' => $this->teacher->where('id', $id)->first(),
                 ];
-
-                return view('admin/content/teacher/addteacher', $data);
+                
+                return view('admin/index', $data);
+                //return redirect()->to('/saveteacher?status=success');
             }
     }
 
@@ -110,7 +106,7 @@ class AdminController extends BaseController
                     '$teach' => $this->teacher->where('id', $id)->first(),
                 ];
 
-                return view('admin/content/teacher/addteacher', $data);
+                return view('admin/index', $data);
     }
     }
 
@@ -130,7 +126,7 @@ class AdminController extends BaseController
             'teach' => $this->teacher->where('id', $id)->first(),
         ];
 
-        return view('admin/content/teacher/addteacher', $data);
+        return view('admin/index', $data);
         }
     }
 
