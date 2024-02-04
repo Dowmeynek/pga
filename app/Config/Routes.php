@@ -41,3 +41,4 @@ $routes->post('/LoginAuth', 'Home::LoginAuth');
 
 
 $routes->get('/li', 'LibraryController::index');
+$routes->get('/addbooks', 'LibraryController::addBooks');

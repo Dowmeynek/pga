@@ -28,8 +28,12 @@
                         <p class="mb-4">
                           Study Hard and Get a Diploma.
                         </p>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Grades</a>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#addBooksModal">Add Books</a>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#borrowBooksModal">Borrow Books</a>
+
                       </div>
+                      <?= $this->include('library/content/addbooks') ?>
+                      <?= $this->include('library/content/borrowbooks') ?>
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
                       <div class="card-body pb-0 px-0 px-md-4">
@@ -39,13 +43,8 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Separate div for the form -->
-              <div class="col-lg-4 mb-4 order-1">
-                <div class="form-container">
-                     <?= $this->include('library/content/form') ?>
-                </div>
-              </div>
+                
+             
 
             </div>
             <!-- / Content -->
@@ -61,6 +60,7 @@
   <!-- / Layout wrapper -->
 
   <?= $this->include('resources/js') ?>
+  <script src="assets/js/book.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,9 @@
 
     <label for="author">Author:</label>
     <input type="text" id="author" name="author" required>
+    <!-- borrowed Date -->
+    <label for="borrowed_date">Borrowed Date:</label>
+    <input type="date" id="borrowed_date" name="borrowed_date" required>
 
     <!-- Return Date -->
     <label for="return_date">Return Date:</label>
