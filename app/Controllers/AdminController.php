@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\TeacherModel;
-use App\Models\EnrollmentModel;
+//use App\Models\EnrollmentModel;
 use App\Models\StudentParents;
 use App\Models\SchoolAttended;
 
@@ -23,6 +23,9 @@ class AdminController extends BaseController
             $data = [
                 'currentuser' => $_SESSION['username'],
                 'teacher' => $this->teacher->findAll(),
+                //'enrollment' => $this->enrollment->findAll(),
+                //'parent' => $this->parent->findAll(),
+                //'schools' => $this->schools->findAll(),
                 ];
             return view ('admin/index', $data);
             }
@@ -32,9 +35,9 @@ class AdminController extends BaseController
     public function __construct()
     {
         $this->teacher = new TeacherModel();
-        $this->enrollment = new EnrollmentModel();
-        $this->parent = new StudentParents();
-        $this->schools = new SchoolAttended();
+        //$this->enrollment = new EnrollmentModel();
+        //$this->parent = new StudentParents();
+        //$this->schools = new SchoolAttended();
   
     }
     public function addTeacher()
@@ -147,9 +150,9 @@ class AdminController extends BaseController
             session_start();
             $data = [
                 'currentuser' => $_SESSION['username'],
-                'enrollment' => $this->enrollment->findAll(),
-                'parent' => $this->parent->findAll(),
-                'schools' => $this->schools->findAll(),
+                //'enrollment' => $this->enrollment->findAll(),
+                //'parent' => $this->parent->findAll(),
+                //'schools' => $this->schools->findAll(),
                 ];
                 return view('admin/content/student/enroll', $data);
             }
@@ -168,8 +171,8 @@ class AdminController extends BaseController
                 session_start();
                 $data = [
                     'currentuser' => $_SESSION['username'],
-                    'enrollment' => $this->enrollment->findAll(),
-                    '$enrollment' => $this->enrollment->where('id', $id)->first(),
+                    //'enrollment' => $this->enrollment->findAll(),
+                    //'$enrollment' => $this->enrollment->where('id', $id)->first(),
                 ];
 
                 return view('admin/content/student/enroll', $data);
@@ -188,8 +191,8 @@ class AdminController extends BaseController
             session_start();
         $data = [
             'currentuser' => $_SESSION['username'],
-            'enrollment' => $this->enrollment->findAll(),
-            'enroll' => $this->enrollment->where('id', $id)->first(),
+            //'enrollment' => $this->enrollment->findAll(),
+            //'enroll' => $this->enrollment->where('id', $id)->first(),
         ];
 
         return view('admin/content/student/enroll', $data);

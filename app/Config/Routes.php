@@ -32,8 +32,15 @@ $routes->get('/student', 'StudentController::index');
 $routes->get('/addenroll', 'EnrollmentController::addenroll');
 $routes->get('/enroll/(:any)', 'EnrollmentController::enroll/$1');
 $routes->post('/save', 'EnrollmentController::save');
-$routes->post('/saveparent', 'EnrollmentController::saveparent');
-$routes->post('/saveschool', 'EnrollmentController::saveschool');
+//$routes->post('/saveparent', 'EnrollmentController::saveparent');
+$routes->post('/savemother', 'EnrollmentController::savemother');
+$routes->post('/savefather', 'EnrollmentController::savefather');
+$routes->post('/saveguardian', 'EnrollmentController::saveguardian');
+//$routes->post('/saveschool', 'EnrollmentController::saveschool');
+$routes->post('/savepreschool', 'EnrollmentController::savepreschool');
+$routes->post('/saveg1_g3', 'EnrollmentController::saveg1_g3');
+$routes->post('/saveg4_g6', 'EnrollmentController::saveg4_g6');
+$routes->post('/savejunior', 'EnrollmentController::savejunior');
 
 $routes->post('/Registering', 'StudentController::register');
 $routes->get('/logout', 'Home::Logout');

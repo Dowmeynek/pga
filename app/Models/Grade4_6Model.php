@@ -4,17 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class StudentParents extends Model
+class Grade4_6Model extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'student_parents';
+    protected $table            = 'grade_school_g4_g6';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['mother_fullname', 'mom_res_add','mom_off_add', 'mom_mob_num','mom_off_num', 'mother_email', 'mother_occupation',
-    'father_fullname', 'dad_res_add','dad_off_add', 'dad_mob_num','dad_off_num','father_email', 'father_occupation', 'account_id'];
+    protected $allowedFields    = ['grade_sch_g4_g6', 'grade_g4_g6_level', 'grade_g4_g6_period', 'account_id'];
 
     // Dates
     protected $useTimestamps = false;
