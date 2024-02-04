@@ -1,4 +1,4 @@
-<?= $this->include('admin/cssJS/head') ?>
+<?= $this->include('student/cssJS/head') ?>
 <body>
 
 <div class="container-fluid mt-4">
@@ -307,5 +307,5 @@
     </div>
 </div>
 
-<?= $this->include('admin/cssJS/js') ?>
+<?= $this->include('student/cssJS/js') ?>
 </body>

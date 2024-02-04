@@ -1,8 +1,8 @@
-<?= $this->include('admin/cssJS/head') ?>
+<?= $this->include('teacher/cssJS/head') ?>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 <?= $this->include('teacher/body') ?>
 <?= $this->include('teacher/content/style/pushandfull') ?>
-<?= $this->include('admin/cssJS/js') ?>
+<?= $this->include('teacher/cssJS/js') ?>
 </div>
 </body>
