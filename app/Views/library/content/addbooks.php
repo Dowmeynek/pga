@@ -1,3 +1,4 @@
+<!-- Your view content goes here -->
 <!-- Modal HTML -->
 <div class="modal fade" id="addBooksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -9,23 +10,30 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Your form content goes here -->
-                <form>
+                <!-- Update the form action and method -->
+                <form action="<?= base_url('add-books/saveData') ?>" method="post">
                     <!-- Add your form fields and content here -->
                     <div class="form-group">
                         <label for="bookTitle">Book Title</label>
-                        <input type="text" class="form-control" id="bookTitle" placeholder="Enter book title">
-                        
-                        <label for="bookTitle">Book Number</label>
-                        <input type="text" class="form-control" id="bookTitle" placeholder="Enter Book Number">
+                        <input type="text" class="form-control" id="bookTitle" name="bookTitle" placeholder="Enter Book Title" required>
+
+                        <label for="bookNumber">Book Number</label>
+                        <input type="text" class="form-control" id="bookNumber" name="bookNumber" placeholder="Enter Book Number" required>
+
+                        <label for="bookAuthor">Book Author</label>
+                        <input type="text" class="form-control" id="bookAuthor" name="bookAuthor" placeholder="Enter Book Author" required>
+
+                        <label for="datePublish">Date Publish</label>
+                        <input type="datetime-local" class="form-control" id="datePublish" name="datePublish" placeholder="Enter Date Publish" required>
                     </div>
-                    
+
                     <!-- Add other form fields as needed -->
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

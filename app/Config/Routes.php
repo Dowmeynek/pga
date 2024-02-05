@@ -50,3 +50,11 @@ $routes->post('/LoginAuth', 'Home::LoginAuth');
 $routes->get('/li', 'LibraryController::index');
 $routes->get('/addbooks', 'LibraryController::addBooks');
 $routes->post('library/saveData', 'LibraryController::saveData');
+
+
+$routes->group('add-books', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('index', 'AddBooksController::index');
+    $routes->get('add-books', 'AddBooksController::addBooks');
+    $routes->post('saveData', 'AddBooksController::saveData');
+});
+

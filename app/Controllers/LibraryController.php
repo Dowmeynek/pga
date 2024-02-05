@@ -12,11 +12,7 @@ class LibraryController extends BaseController
         return view('library/index');
     }
 
-    public function addBooks()
-    {
-        return view('library/content/addbook');
-    }
-
+ 
     public function saveData()
     {
         // Update the use statement for BorrowedBooksModel
