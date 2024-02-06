@@ -22,7 +22,14 @@ class Home extends BaseController
     {
         return view('home/about');
     }
-
+    public function verify()
+    {
+        return view('logreg/verify');
+    }
+    public function forget()
+    {
+        return view('logreg/forget');
+    }
 
     public function Logout() {
         $session = session();

@@ -11,6 +11,7 @@
                         </div></center><br>
                         <?php endif;?>
                         <a href="/reg" class="signup-image-link">Create an account</a>
+                        <a href="/forget" class="signup-image-link">Forgot Password</a>
                     </div>
 
                     <div class="signin-form">

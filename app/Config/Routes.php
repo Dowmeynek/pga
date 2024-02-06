@@ -10,6 +10,8 @@ $routes->get('/login', 'Home::logreg');
 $routes-> get ('/', 'Home::index');
 $routes->get('/reg', 'Home::reg');
 $routes->get('/about', 'Home::ab');
+$routes->get('/verify', 'Home::verify');
+$routes->get('/forget', 'Home::forget');
 
 $routes->get('/admins', 'AdminController::index');
 $routes->get('/cal', 'AdminController::cal');
