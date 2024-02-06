@@ -1,0 +1,46 @@
+CRITICAL - 2024-02-06 10:34:53 --> Invalid file: "enrollment/content/gua.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('enrollment/content/gua.php')
+ 2 SYSTEMPATH\View\View.php(467): CodeIgniter\View\View->render('enrollment/content/gua', null, true)
+ 3 APPPATH\Views\enrollment\index.php(49): CodeIgniter\View\View->include('enrollment/content/gua')
+ 4 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pga\\app\\Views\\enrollment\\index.php')
+ 5 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('enrollment/index', [], true)
+ 7 APPPATH\Controllers\EnrollmentController.php(44): view('enrollment/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EnrollmentController->addenroll()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')
+CRITICAL - 2024-02-06 10:37:09 --> Undefined array key "id"
+in APPPATH\Controllers\EnrollmentController.php on line 152.
+ 1 APPPATH\Controllers\EnrollmentController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pga\\app\\Controllers\\EnrollmentController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EnrollmentController->savefamily()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')
+CRITICAL - 2024-02-06 10:37:58 --> Undefined array key "id"
+in APPPATH\Controllers\EnrollmentController.php on line 152.
+ 1 APPPATH\Controllers\EnrollmentController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pga\\app\\Controllers\\EnrollmentController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EnrollmentController->savefamily()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')
+CRITICAL - 2024-02-06 10:38:17 --> Undefined array key "id"
+in APPPATH\Controllers\EnrollmentController.php on line 152.
+ 1 APPPATH\Controllers\EnrollmentController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pga\\app\\Controllers\\EnrollmentController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EnrollmentController->savefamily()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')
+CRITICAL - 2024-02-06 10:39:48 --> Undefined array key "id"
+in APPPATH\Controllers\EnrollmentController.php on line 152.
+ 1 APPPATH\Controllers\EnrollmentController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\pga\\app\\Controllers\\EnrollmentController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EnrollmentController->savefamily()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EnrollmentController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pga\\public\\index.php')

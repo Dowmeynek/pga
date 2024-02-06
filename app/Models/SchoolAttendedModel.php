@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Grade4_6Model extends Model
+class SchoolAttendedModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'grade_school_g4_g6';
+    protected $table            = 'school_attended';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['grade_sch_g4_g6', 'grade_g4_g6_level', 'grade_g4_g6_period', 'account_id'];
+    protected $allowedFields    = ['grade', 'school_name', 'level', 'period', 'account_id'];
 
     // Dates
     protected $useTimestamps = false;

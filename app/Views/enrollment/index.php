@@ -37,32 +37,21 @@
 
                     <div class="col-sm-7">
                       <div class="card-body">
-                        <h5 class="card-title text-primary">Parents Information</h5>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#motherModal">Mother Info</a>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#fatherModal">Father Info</a>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#guaModal">Guardian Info</a>
+                        <h5 class="card-title text-primary">Family Information</h5>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#FamilyModal">Family Info</a>
 
                       </div>
 
-                      <?= $this->include('enrollment/content/mother') ?>
-                      <?= $this->include('enrollment/content/father') ?>
-                      <?= $this->include('enrollment/content/gua') ?>
+                      <?= $this->include('enrollment/content/family') ?>
 
                     </div>
 
                     <div class="col-sm-7">
                       <div class="card-body">
                         <h5 class="card-title text-primary">Schools Attendend Information</h5>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#preschoolModal">Pre-School Info</a>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#g1_g3Modal">Grade 1 to 3 Info</a>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#g4_g6Modal">Grade 4 to 6 Info</a>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#juniorModal">Junior School Info</a>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#schoolModal">School Info</a>
                       </div>
-                      <?= $this->include('enrollment/content/preschool') ?>
-                      <?= $this->include('enrollment/content/g1_g3') ?>
-                      <?= $this->include('enrollment/content/g4_g6') ?>
-                      <?= $this->include('enrollment/content/junior') ?>
-
+                      <?= $this->include('enrollment/content/school') ?>
                     </div>
 
 
