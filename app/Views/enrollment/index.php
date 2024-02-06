@@ -30,19 +30,26 @@
                       <div class="card-body">
                         <h5 class="card-title text-primary">Student Information</h5>
                         <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#learnerModal">Learner Info</a>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#addressModal">Addresses</a>
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#admissionModal">Admission Info</a>
                       </div>
                       <?= $this->include('enrollment/content/learner') ?>
-
+                      <?= $this->include('enrollment/content/address') ?>
+                      <?= $this->include('enrollment/content/admission') ?>
                     </div>
 
                     <div class="col-sm-7">
                       <div class="card-body">
                         <h5 class="card-title text-primary">Family Information</h5>
-                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#FamilyModal">Family Info</a>
-
+                        <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#FamilyModal">Parent Info</a>
+                        <p class="mb-10">
+                          If you have siblings presently enrolled in PGA fill up the form below:<br>
+                            <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#siblingModal">Sibling Info</a>
+                        </p>
                       </div>
 
                       <?= $this->include('enrollment/content/family') ?>
+                      <?= $this->include('enrollment/content/sibling') ?>
 
                     </div>
 

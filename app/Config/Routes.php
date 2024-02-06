@@ -35,7 +35,9 @@ $routes->get('/addenroll', 'EnrollmentController::addenroll');
 $routes->get('/enroll/(:any)', 'EnrollmentController::enroll/$1');
 $routes->post('/save', 'EnrollmentController::save');
 $routes->post('/savefamily', 'EnrollmentController::savefamily');
-
+$routes->post('/saveaddress', 'EnrollmentController::saveaddress');
+$routes->post('/saveadmissions', 'EnrollmentController::saveadmissions');
+$routes->post('/savesibling', 'EnrollmentController::savesibling');
 $routes->post('/saveschool', 'EnrollmentController::saveschool');
 
 $routes->post('/Registering', 'StudentController::register');

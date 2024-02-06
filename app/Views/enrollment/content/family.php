@@ -3,7 +3,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Family Form</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Parent Form</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -23,16 +23,16 @@
                         <option value="Guardian">Guardian</option>
                     </select>
 
-                                    <label for="gua_fullname">Full Name:</label>
-                                        <input type="text" class="form-control" name="fullname" placeholder="Enter Full Name:">
+                                    <label for="fullname">Full Name:</label>
+                                        <input type="text" class="form-control" name="fullname" placeholder="Enter Full Name">
                                  
 
                                     <label for="email">Email:</label>
-                                        <input type="email" class="form-control" name="email" placeholder="Email:">
+                                        <input type="email" class="form-control" name="email" placeholder="Email">
                                  
 
                                     <label for="occupation">Occupation:</label>
-                                        <input type="text" class="form-control" name="occupation" placeholder="Occupation:">
+                                        <input type="text" class="form-control" name="occupation" placeholder="Occupation">
                                  
                                
                                     <label for="res_add">Residential Address:</label>

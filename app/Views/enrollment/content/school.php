@@ -17,7 +17,7 @@
                                         <input type="hidden" class="form-control" name="id"
                                         value="<?php if (isset($school['id'])) {echo $school['id'];}?>">
 
-                                    <label for="grade">Grade/Year</label>
+                                    <label for="grade">Grade/Year:</label>
                                         <select class="form-control" name="grade" id="grade">
                                         <option value="Pre-School (Kinder)">Pre-School (Kinder)</option>
                                         <option value="Grade School (G1-G3)">Grade School (G1-G3)</option>

@@ -4,17 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class LearnerModel extends Model
+class SiblingModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'student_learner';
+    protected $table            = 'sibling';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['first_name','middle_name','last_name','nickname','birthdate','birthplace','age',
-    'gender','marital_status','mobile_num','nationality','religion','status','account_id'];
+    protected $allowedFields    = ['fullname','yr_lvl','affiliation', 'account_id'];
 
     // Dates
     protected $useTimestamps = false;

@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\LearnerModel;
+use App\Models\AddressModel;
+use App\Models\AdmissionsModel;
+use App\Models\SiblingModel;
 use App\Models\FamilyModel;
 use App\Models\SchoolAttendedModel;
 
@@ -15,7 +18,9 @@ class EnrollmentController extends BaseController
     {
         $this->learner = new LearnerModel();
         $this->family = new FamilyModel();
-        
+        $this->address = new AddressModel();
+        $this->admissions = new AdmissionsModel();
+        $this->sibling = new SiblingModel();
         $this->school = new SchoolAttendedModel();
   
     }
@@ -29,7 +34,6 @@ class EnrollmentController extends BaseController
             session_start();
             $data = [
             'currentuser' => $_SESSION['username'],
-            //'learner' => $this->learner->findAll(),
             ];
         return view('enrollment/index', $data);
         }
@@ -55,12 +59,10 @@ class EnrollmentController extends BaseController
             'nickname' => $this->request->getVar('nickname'),
             'age' => $this->request->getVar('age'),
             'gender' => $this->request->getVar('gender'),
+            'marital_status' => $this->request->getVar('marital_status'),
             'birthdate' => $this->request->getVar('birthdate'),
             'birthplace' => $this->request->getVar('birthplace'),
-            'address' => $this->request->getVar('address'),
-            'tel_num' => $this->request->getVar('tel_num'),
             'mobile_num' => $this->request->getVar('mobile_num'),
-            'postal_code' => $this->request->getVar('postal_code'),
             'nationality' => $this->request->getVar('nationality'),
             'religion' => $this->request->getVar('religion'),
             'account_id' => $_SESSION['id'],
@@ -70,6 +72,88 @@ class EnrollmentController extends BaseController
             $this->learner->set($data)->where('id', $id)->update();
         } else {
             $this->learner->save($data);
+        }
+
+        return view('enrollment/index', $data);
+    }
+    }
+
+    public function saveaddress()  {
+        $idnum = $_POST['id'];
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('login');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'id' => $this->request->getVar('id'),
+            'type' => $this->request->getVar('type'),
+            'address' => $this->request->getVar('address'),
+            'postal_code' => $this->request->getVar('postal_code'),
+            'tel_num' => $this->request->getVar('tel_num'),
+            'account_id' => $_SESSION['id'],
+        ];
+
+        if ($idnum != null) {
+            $this->address->set($data)->where('id', $id)->update();
+        } else {
+            $this->address->save($data);
+        }
+
+        return view('enrollment/index', $data);
+    }
+    }
+
+    public function saveadmissions()  {
+        $idnum = $_POST['id'];
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('login');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'id' => $this->request->getVar('id'),
+            'category' => $this->request->getVar('category'),
+            'yr_lvl' => $this->request->getVar('yr_lvl'),
+            'program' => $this->request->getVar('program'),
+            'account_id' => $_SESSION['id'],
+        ];
+
+        if ($idnum != null) {
+            $this->admissions->set($data)->where('id', $id)->update();
+        } else {
+            $this->admissions->save($data);
+        }
+
+        return view('enrollment/index', $data);
+    }
+    }
+
+    public function savesibling()  {
+        $idnum = $_POST['id'];
+        if(!session()->get('isLoggedIn')){
+            return redirect()->to('login');
+        }
+        else{
+            $session = session();
+            session_start();
+            $data = [
+            'currentuser' => $_SESSION['username'],
+            'id' => $this->request->getVar('id'),
+            'fullname' => $this->request->getVar('fullname'),
+            'yr_lvl' => $this->request->getVar('yr_lvl'),
+            'affiliation' => $this->request->getVar('affiliation'),
+            'account_id' => $_SESSION['id'],
+        ];
+
+        if ($idnum != null) {
+            $this->sibling->set($data)->where('id', $id)->update();
+        } else {
+            $this->sibling->save($data);
         }
 
         return view('enrollment/index', $data);

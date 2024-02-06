@@ -21,86 +21,65 @@
 
                             
                                     <label for="first_name">First Name:</label>
-                                        <input type="text" class="form-control" name="first_name" placeholder="Enter First Name"
-                                        value="<?php if (isset($learner['first_name'])) {echo $learner['first_name'];}?>">
+                                        <input type="text" class="form-control" name="first_name" placeholder="Enter First Name">
                         
 
                             
                                     <label for="middle_name">Middle Name:</label>
-                                        <input type="text" class="form-control" name="middle_name" placeholder="Enter Middle Name" 
-                                        value="<?php if (isset($learner['middle_name'])) {echo $learner['middle_name'];}?>">
+                                        <input type="text" class="form-control" name="middle_name" placeholder="Enter Middle Name">
                         
 
                             
                                     <label for="last_name">Last Name:</label>
-                                        <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name" 
-                                        value="<?php if (isset($learner['last_name'])) {echo $learner['last_name'];}?>">
+                                        <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name">
                         
 
                             
                                     <label for="nickname">Nickname:</label>
-                                        <input type="text" class="form-control" name="nickname" placeholder="Enter Nickname" 
-                                        value="<?php if (isset($learner['nickname'])) {echo $learner['nickname'];}?>">
+                                        <input type="text" class="form-control" name="nickname" placeholder="Enter Nickname">
                         
 
                             
-                                    <label for="last_name">Age:</label>
-                                        <input type="number" class="form-control" name="age" placeholder="Enter Age" 
-                                        value="<?php if (isset($learner['age'])) {echo $learner['age'];}?>">
+                                    <label for="age">Age:</label>
+                                        <input type="number" class="form-control" name="age" placeholder="Enter Age">
                         
 
                             
-                                    <label for="last_name">Gender:</label>
-                                        <input type="text" class="form-control" name="gender" placeholder="Enter Gender" 
-                                        value="<?php if (isset($learner['gender'])) {echo $learner['gender'];}?>">
+                                    <label for="gender">Gender:</label>
+                                        <select class="form-control" name="gender" id="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
                         
 
+                                        <label for="marital_status">Marital Status:</label>
+                                            <select class="form-control" name="marital_status" id="marital_status">
+                                            <option value="Single">Single</option>
+                                            <option value="Married">Married</option>
+                                            <option value="Separated">Separated</option>
+                                            <option value="Widow">Widow</option>
+                                        </select>
                             
                                     <label for="birthdate">Birthdate:</label>
-                                        <input type="date" class="form-control" name="birthdate" placeholder="Enter Birthdate" 
-                                        value="<?php if (isset($learner['birthdate'])) {echo $learner['birthdate'];}?>">
+                                        <input type="date" class="form-control" name="birthdate" placeholder="Enter Birthdate">
                         
 
                             
                                     <label for="birthplace">Birthplace:</label>
-                                        <input type="text" class="form-control" name="birthplace" placeholder="Enter Birthplace" 
-                                        value="<?php if (isset($learner['birthplace'])) {echo $learner['birthplace'];}?>">
-                        
-                               
-                            
-                                    <label for="last_name">Address:</label>
-                                        <input type="text" class="form-control" name="address" placeholder="Enter Address" 
-                                        value="<?php if (isset($learner['address'])) {echo $learner['address'];}?>">
-                        
-                                
-                            
-                                    <label for="last_name">Telphone Number:</label>
-                                        <input type="number" class="form-control" name="tel_num" max_length="11" placeholder="Enter Telephone Number" 
-                                        value="<?php if (isset($learner['tel_num'])) {echo $learner['tel_num'];}?>">
-                        
+                                        <input type="text" class="form-control" name="birthplace" placeholder="Enter Birthplace">
 
                             
                                     <label for="last_name">Mobile Number:</label>
-                                        <input type="number" class="form-control" name="mobile_num" max_length="11" placeholder="Enter Mobile Number" 
-                                        value="<?php if (isset($learner['mobile_num'])) {echo $learner['mobile_num'];}?>">
+                                        <input type="number" class="form-control" name="mobile_num" max_length="11" placeholder="Enter Mobile Number">
                         
-
-                            
-                                    <label for="last_name">Postal Code:</label>
-                                        <input type="number" class="form-control" name="postal_code" max_length="4" placeholder="Enter Postal Code" 
-                                        value="<?php if (isset($learner['postal_code'])) {echo $learner['postal_code'];}?>">
-                        
-
                             
                                     <label for="last_name">Nationality:</label>
-                                        <input type="text" class="form-control" name="nationality" placeholder="Enter Nationality" 
-                                        value="<?php if (isset($learner['nationality'])) {echo $learner['nationality'];}?>">
+                                        <input type="text" class="form-control" name="nationality" placeholder="Enter Nationality">
                         
 
                             
                                     <label for="last_name">Religion:</label>
-                                        <input type="text" class="form-control" name="religion" placeholder="Enter Religion" 
-                                        value="<?php if (isset($learner['religion'])) {echo $learner['religion'];}?>">
+                                        <input type="text" class="form-control" name="religion" placeholder="Enter Religion">
                         
 
                     </div>
