@@ -20,7 +20,7 @@ class AddBooksController extends BaseController
             'book_title' => $this->request->getPost('bookTitle'),
             'book_number' => $this->request->getPost('bookNumber'),
             'book_author' => $this->request->getPost('bookAuthor'),
-            'date_publish' => $this->request->getPost('datePublish'),
+            'datepublish' => $this->request->getPost('datePublish'),
         ];
     
         if ($addBooksModel->insert($data)) {

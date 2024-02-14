@@ -10,7 +10,7 @@
         <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
           <!-- ... (existing navbar code) ... -->
         </nav>
-        <?= $this->include('library/content/sidebar') ?>
+        <?= $this->include('parents/content/sidebar') ?>
         <!-- / Navbar -->
 
         <!-- Content wrapper -->
@@ -25,7 +25,7 @@
                   <div class="d-flex align-items-end row">
                     <div class="col-sm-7">
                       <div class="card-body">
-                        <h5 class="card-title text-primary">Welcome Dominic! 🎉</h5>
+                        <h5 class="card-title text-primary">Welcome Parents! 🎉</h5>
                         <p class="mb-4">
                           Study Hard and Get a Diploma.
                         </p>
@@ -33,8 +33,7 @@
                         <a href="javascript:;" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#borrowBooksModal">Borrow Books</a>
 
                       </div>
-                      <?= $this->include('library/content/addbooks') ?>
-                      <?= $this->include('library/content/borrowbooks') ?>
+                 
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
                       <div class="card-body pb-0 px-0 px-md-4">

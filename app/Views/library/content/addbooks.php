@@ -1,3 +1,13 @@
+<?php if (isset($status) && $status === 'success'): ?>
+    <!-- Success Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <p>Data added successfully!</p>
+        </div>
+    </div>
+<?php endif; ?>
+
+
 <!-- Your view content goes here -->
 <!-- Modal HTML -->
 <div class="modal fade" id="addBooksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

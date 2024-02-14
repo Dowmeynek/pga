@@ -13,7 +13,9 @@ class AddBooksModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['book_title', 'book_number', 'book_author', 'datepublish'];
+    protected $allowedFields    = ['book_title', 'book_number', 'book_author', 'datepublish', 'qty'];
+
+    
 
     // Dates
     protected $useTimestamps = false;

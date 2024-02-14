@@ -56,3 +56,6 @@ $routes->group('add-books', ['namespace' => 'App\Controllers'], function ($route
     $routes->post('saveData', 'AddBooksController::saveData');
 });
 
+$routes->get('/par', 'ParentController::index');
+
+
